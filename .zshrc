@@ -33,10 +33,8 @@ typeset -U path
 path+=("$HOME/.local/bin")
 path+=("$HOME/.local/.npm-global/bin")
 path+=("$HOME/.local/scripts")
-# path+=("$HOME/.local/share/nvim/mason/bin")
 export PATH
 
-# alias ls="eza -lF --icons --git --no-quotes --group-directories-first --smart-group --hyperlink"
 alias ls="ls -lF --group-directories-first --color=auto"
 alias tap="trash-put"
 
