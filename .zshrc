@@ -70,6 +70,7 @@ ex() {
 
 eval "$(starship init zsh)"
 
+# Deno env
 . "/home/main/.deno/env"
 
 # Initialize zsh completions (added by deno install script)
