@@ -36,6 +36,8 @@ path+=("$HOME/.local/scripts")
 export PATH
 
 alias ls="ls -lF --group-directories-first --color=auto"
+alias cdg="cd $HOME/Projects/git-repos/github/"
+alias cdr="cd $HOME/Projects/git-repos/rond/"
 alias tap="trash-put"
 
 source /usr/share/fzf/shell/key-bindings.zsh
