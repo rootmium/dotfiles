@@ -35,7 +35,7 @@ path+=("$HOME/.local/.npm-global/bin")
 path+=("$HOME/.local/scripts")
 export PATH
 
-alias ls="ls -lF --group-directories-first --color=auto"
+alias ls="eza -la -F --group-directories-first --icons --git --no-quotes --no-user"
 alias cdg="cd $HOME/Projects/git-repos/github/"
 alias cdr="cd $HOME/Projects/git-repos/rond/"
 alias tap="trash-put"
