@@ -31,6 +31,7 @@ return {
       javascript = { "prettierd" },
       javascriptreact = { "prettierd" },
       typescript = { "prettierd" },
+      svelte = { "prettierd" },
       html = { "prettierd" },
       css = { "prettierd" },
       bash = { "shfmt" },

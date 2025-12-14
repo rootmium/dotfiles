@@ -30,6 +30,7 @@ return {
       "nginx-config-formatter",
       "tailwindcss-language-server",
       "prisma-language-server",
+      "svelte-language-server",
     }
 
     -- Use `mason-tool-installer` package to install everying in 'servers'

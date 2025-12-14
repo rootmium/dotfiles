@@ -18,6 +18,7 @@ return {
       -- "nginx_language_server",
       "tailwindcss",
       "prismals",
+      "svelte",
     }
 
     -- Run a for loop to setup all the servers
