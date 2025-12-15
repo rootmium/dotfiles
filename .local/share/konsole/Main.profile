@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=catppuccin-mocha
+ColorScheme=Custom
 
 [General]
 InvertSelectionColors=true
