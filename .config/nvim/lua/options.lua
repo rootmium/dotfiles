@@ -82,8 +82,8 @@ vim.o.inccommand = "split"
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- vim.cmd("colorscheme slate")
--- vim.o.termguicolors = false
+vim.cmd("colorscheme wildcharm")
+
 -- Disable background (make it transparent)
 vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
 
