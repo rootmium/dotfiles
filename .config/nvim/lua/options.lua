@@ -46,7 +46,7 @@ vim.o.tabstop = 2
 vim.o.softtabstop = 2
 
 -- Maximum number of items to show in the popup menu
-vim.o.pumheight = 5
+vim.o.pumheight = 3
 
 -- Highlight the text line of the cursor
 vim.o.cursorline = true
