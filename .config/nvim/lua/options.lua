@@ -15,8 +15,8 @@ vim.o.number = true
 -- Automatically save undo history to an undo file
 vim.o.undofile = true
 
--- Disable sign column
-vim.o.signcolumn = "auto"
+-- Show sign column stuff on the number column
+vim.o.signcolumn = "number"
 
 -- Minimal number of screen lines to keep above and below the cursor
 vim.o.scrolloff = 10
