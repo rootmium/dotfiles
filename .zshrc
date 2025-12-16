@@ -1,6 +1,3 @@
-# Add deno completions to search path
-if [[ ":$FPATH:" != *":/home/main/.zsh/completions:"* ]]; then export FPATH="/home/main/.zsh/completions:$FPATH"; fi
-
 ZSH_CACHE_ALL="$HOME/.cache/zsh"
 [[ -d $ZSH_CACHE_ALL ]] || mkdir -p $ZSH_CACHE_ALL
 
@@ -69,18 +66,3 @@ ex() {
 }
 
 eval "$(starship init zsh)"
-
-# Deno env
-. "/home/main/.deno/env"
-
-# Initialize zsh completions (added by deno install script)
-autoload -Uz compinit
-compinit
-eval "$(/home/main/.local/bin/mise activate zsh)"
-
-# bun completions
-[ -s "/home/main/.bun/_bun" ] && source "/home/main/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
