@@ -32,9 +32,10 @@ path+=("$HOME/.npm-global/bin")
 path+=("$HOME/.local/scripts")
 export PATH
 
-alias ls="eza -la -F --group-directories-first --icons --git --no-quotes --no-user"
 alias cdg="cd $HOME/Projects/git-repos/github/"
 alias cdr="cd $HOME/Projects/git-repos/rond/"
+alias ls="eza -l -F --group-directories-first --icons --git --no-quotes --no-user"
+alias la="eza -la -F --group-directories-first --icons --git --no-quotes --no-user"
 alias tap="trash-put"
 
 source /usr/share/fzf/shell/key-bindings.zsh
