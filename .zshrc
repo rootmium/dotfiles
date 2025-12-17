@@ -28,7 +28,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 
 typeset -U path
 path+=("$HOME/.local/bin")
-path+=("$HOME/.local/.npm-global/bin")
+path+=("$HOME/.npm-global/bin")
 path+=("$HOME/.local/scripts")
 export PATH
 
