@@ -87,10 +87,6 @@ vim.o.smartcase = true
 -- Show preview of substitutions next to the pattern
 vim.o.inccommand = "split"
 
--- Disable netrw
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 vim.cmd("colorscheme wildcharm")
 
 -- Disable background (make it transparent)
