@@ -58,7 +58,16 @@ vim.o.laststatus = 3
 vim.g.netrw_banner = 0
 
 -- Set window size of netrw (eg. :Lex)
-vim.g.netrw_winsize = 25
+vim.g.netrw_winsize = 20
+
+-- Keep current directory and browsing directory synced
+vim.g.netrw_keepdir = 0
+
+-- Change copy command to enable recursive copy
+vim.g.netrw_localcopydircmd = "cp -r"
+
+-- Highlight marked files as search
+vim.cmd("hi! link netrwMarkFile Search")
 
 -- Save these thing to session file
 vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
