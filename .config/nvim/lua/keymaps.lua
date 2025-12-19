@@ -5,12 +5,6 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent = true })
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true, silent = true })
 vim.keymap.set("i", "jj", "<esc>")
-vim.keymap.set("n", "<esc>", "<esc>:nohl<cr>", { silent = true, desc = "Clear highlights" })
-vim.keymap.set("n", "0", "^")
-
--- Move in insert mode
-vim.keymap.set("i", "<C-f>", "<esc>la")
-vim.keymap.set("i", "<C-b>", "<esc>i")
 
 -- Better indenting
 vim.keymap.set("v", "<", "<gv")
