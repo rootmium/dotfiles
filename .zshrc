@@ -26,6 +26,10 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'k' vi-up-line-or-history
 
+PS1="
+%F{1}%?%F{7} %2~
+%F{2}❯%F{7} "
+
 typeset -U path
 path+=("$HOME/.local/bin")
 path+=("$HOME/.npm-global/bin")
@@ -70,5 +74,4 @@ o() {
   xdg-open "$@" >/dev/null 2>&1
 }
 
-eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
