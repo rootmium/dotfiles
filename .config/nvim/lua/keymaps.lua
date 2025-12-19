@@ -24,4 +24,7 @@ vim.keymap.set("n", "<leader>uI", "<cmd>InspectTree<cr>")
 vim.keymap.set("n", "<leader>t", ":terminal<cr>")
 vim.keymap.set("t", "<C-[>", "<C-\\><C-N>")
 vim.keymap.set("t", "jj", "<C-\\><C-N>")
-vim.keymap.set("n", "<leader>f", ":Lex<cr>", { desc = "Open file manager" })
+
+-- Netrw
+vim.keymap.set("n", "<leader>ff", ":Lexplore %:p:h<cr>")
+vim.keymap.set("n", "<leader>fa", ":Lexplore<cr>")
