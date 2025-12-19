@@ -17,11 +17,11 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 -- Highlight under cursor
-vim.keymap.set("n", "<leader>ui", vim.show_pos, { desc = "Show treesitter properties" })
-vim.keymap.set("n", "<leader>uI", "<cmd>InspectTree<cr>", { desc = "Inspect tresitter tree" })
+vim.keymap.set("n", "<leader>ui", vim.show_pos)
+vim.keymap.set("n", "<leader>uI", "<cmd>InspectTree<cr>")
 
 -- Terminal mappings
-vim.keymap.set("n", "<leader>t", ":terminal<cr>", { desc = "Open terminal" })
+vim.keymap.set("n", "<leader>t", ":terminal<cr>")
 vim.keymap.set("t", "<C-[>", "<C-\\><C-N>")
 vim.keymap.set("t", "jj", "<C-\\><C-N>")
 vim.keymap.set("n", "<leader>f", ":Lex<cr>", { desc = "Open file manager" })
