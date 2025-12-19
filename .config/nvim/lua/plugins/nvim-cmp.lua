@@ -14,9 +14,9 @@ return {
     local luasnip = require("luasnip")
     local cmp = require("cmp")
     cmp.setup({
-      -- completion = {
-      --   autocomplete = false,
-      -- },
+      completion = {
+        autocomplete = false,
+      },
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)
