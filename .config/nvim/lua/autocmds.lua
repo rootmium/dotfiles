@@ -3,23 +3,6 @@ vim.api.nvim_command("autocmd TermOpen * startinsert")
 vim.api.nvim_command("autocmd TermOpen * setlocal nonumber norelativenumber")
 vim.api.nvim_command("autocmd TermEnter * setlocal signcolumn=no")
 
--- vim.api.nvim_create_autocmd({ "ColorScheme" }, {
---   callback = function()
---     vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
---     vim.cmd("hi Comment guifg=grey60 ctermfg=grey")
---   end,
--- })
-
--- vim.api.nvim_create_autocmd(
---   { "BufEnter", "FocusGained", "InsertLeave", "WinEnter" },
---   { pattern = "*", command = "if &nu && mode() != 'i' | set rnu | endif" }
--- )
---
--- vim.api.nvim_create_autocmd(
---   { "BufLeave", "FocusLost", "InsertEnter", "WinLeave" },
---   { pattern = "*", command = "if &nu | set nornu | endif" }
--- )
-
 -- Check if it's needed to reload the file when it changes
 vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
   group = vim.api.nvim_create_augroup("nc-reload-file", { clear = true }),
