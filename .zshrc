@@ -43,7 +43,6 @@ alias cdr="cd $HOME/Projects/rond/"
 alias tap="trash-put"
 
 source /usr/share/fzf/shell/key-bindings.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ex() {
   if [ -f "$1" ]; then
