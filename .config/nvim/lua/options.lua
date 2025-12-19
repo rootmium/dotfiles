@@ -87,13 +87,8 @@ vim.o.smartcase = true
 -- Show preview of substitutions next to the pattern
 vim.o.inccommand = "split"
 
-vim.cmd("colorscheme wildcharm")
-
 -- Disable background (make it transparent)
 vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
 
 -- Make comments italic
 vim.cmd("hi Comment gui=italic cterm=italic")
-
--- Change colors for the statusline
--- vim.cmd("hi StatusLine guibg=#404040 guifg=#ffffff")
