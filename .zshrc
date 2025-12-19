@@ -27,8 +27,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'k' vi-up-line-or-history
 
 PS1="
-%F{1}%?%F{7} %2~
-%F{2}❯%F{7} "
+%F{1}%?%F{7} %F{3}%2~
+%F{2}❯%f "
 
 typeset -U path
 path+=("$HOME/.local/bin")
