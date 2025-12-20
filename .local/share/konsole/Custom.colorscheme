@@ -1,5 +1,5 @@
 [Background]
-Color=35,38,39
+Color=20,22,27
 
 [BackgroundFaint]
 Color=49,54,59
@@ -92,7 +92,7 @@ Color=252,252,252
 Anchor=0.5,0.5
 Blur=false
 ColorRandomization=false
-Description=Custom
+Description=Custom Dark
 FillStyle=Tile
 Opacity=1
 Wallpaper=
