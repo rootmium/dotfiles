@@ -43,3 +43,25 @@ vim.api.nvim_create_autocmd({ "VimResized" }, {
     vim.cmd("tabnext " .. current_tab)
   end,
 })
+
+-- Create an autocommand group for theme switching
+local theme_group = vim.api.nvim_create_augroup("ThemeSwitcher", { clear = true })
+
+vim.api.nvim_create_autocmd("OptionSet", {
+  pattern = "background",
+  group = theme_group,
+  callback = function()
+    if vim.o.background == "light" then
+      vim.cmd("colorscheme shine")
+    else
+      vim.cmd("colorscheme default")
+    end
+  end,
+})
+
+-- Run once on startup to set the initial colorscheme
+if vim.o.background == "light" then
+  vim.cmd("colorscheme shine")
+else
+  vim.cmd("colorscheme default")
+end
